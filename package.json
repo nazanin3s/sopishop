@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^6.0.0"
+  },
+  "name": "shopify",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "server": "nodemon back/server.js",
+    "client": "npm start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
